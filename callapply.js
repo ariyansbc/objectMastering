@@ -9,8 +9,8 @@ const normalPerson = {
         return fullName;
     },
     getSalary : function(amount) {
-        const netSalary = this.salary - amount;
-        return netSalary;
+        this.salary= this.salary - amount;
+        return this.salary;
     }
 } 
 console.log(normalPerson.getFullName());
